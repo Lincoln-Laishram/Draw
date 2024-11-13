@@ -152,7 +152,7 @@ export const Canvas = forwardRef(({ drawingData, onSave }, ref) => {
                 <canvas 
                     ref={canvasRef}
                     className={styles.canvas}
-                    style={{ cursor: isEraser ? `url(${eraser}) 15 15 auto` : 'crosshair' }}
+                    style={{ cursor: isEraser ? `url(${eraser}) 15 15,auto` : 'crosshair' }}
                     onMouseDown={startDrawing}
                     onMouseMove={draw}
                     onMouseUp={stopDrawing}
