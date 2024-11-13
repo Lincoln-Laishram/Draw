@@ -57,7 +57,7 @@ export const Canvas = forwardRef(({ drawingData, onSave }, ref) => {
     };
 
     const startDrawing = (e) => {
-        // e.preventDefault();
+        e.preventDefault();
         setIsDrawing(true);
         const { x, y } = getPosition(e);
         setLastPosition({ x, y });
@@ -80,7 +80,7 @@ export const Canvas = forwardRef(({ drawingData, onSave }, ref) => {
 
     const draw = (e) => {
         if (!isDrawing) return;
-        // e.preventDefault();
+        e.preventDefault();
 
         const canvas = canvasRef.current;
         const context = canvas.getContext('2d');
