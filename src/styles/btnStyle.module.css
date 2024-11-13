@@ -1,0 +1,42 @@
+
+.BtnContainer{
+    background-color: rgba(246, 240, 240, 0.954);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.818);
+    width:300px;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 1px;
+}
+.color, .penDuster, .clear {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.color{
+    color: black;
+    padding: 0;
+    font-size: 1pc;
+    top: 4px;
+    margin-right: 2pc;
+}
+.penDuster{
+    font-size: x-large;
+    color: black;
+    margin-right: 2pc;
+}
+
+.setSize{
+    position: relative;
+    left: -2pc;    
+}
+.clear{
+    font-size: large;
+    color: black;
+    padding: 4px;
+}
+/*Mobile phones*/
